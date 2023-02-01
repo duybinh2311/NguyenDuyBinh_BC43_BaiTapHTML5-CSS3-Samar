@@ -1,0 +1,38 @@
+:root {
+  --animate-duration: 2s;
+}
+
+@keyframes down-up {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes left-right {
+  49% {
+    transform: translateX(100%)
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(1deg) translate(2px,2px)
+  }
+
+  50% {
+    transform: rotate(-1deg) translate(-2px,-2px)
+  }
+
+  100% {
+    transform: rotate(1deg) translate(2px,2px)
+  }
+}
